@@ -1,11 +1,11 @@
 {
-    "name": "neko-atom-syntax",
-    "theme": "syntax",
-    "version": "0.0.0",
-    "description": "Subtle dark syntax theme using Seti colors matched to Neko UI",
-    "repository": "https://github.com/catlinman/neko-atom-syntax",
-    "license": "MIT",
-    "engines": {
-        "atom": ">=1.0.0 <2.0.0"
-    }
+  "name": "neko-atom-syntax",
+  "theme": "syntax",
+  "version": "0.1.0",
+  "description": "Subtle dark syntax theme using Seti colors matched to Neko UI",
+  "repository": "https://github.com/catlinman/neko-atom-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
 }
