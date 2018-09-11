@@ -1,0 +1,79 @@
+@import "colors.less";
+
+.atom-text-editor,
+:host {
+    background-color: @code-background;
+    color: @code-font-color;
+}
+
+.atom-text-editor,
+:host {
+    background-color: @code-background;
+    color: @code-font-color;
+
+    .wrap-guide {
+        background: @guides;
+    }
+
+    .indent-guide {
+        color: @guides;
+    }
+
+    .invisible-character {
+        color: @invisible;
+    }
+
+    .gutter {
+        background-color: @gutter-background;
+        color: @gutter-text;
+
+        .line-number {
+            background: @gutter-background;
+            color: @gutter-text;
+
+            &.cursor-line {
+                background-color: @gutter-background-highlight;
+                color: @gutter-text-highlight;
+                font-weight: 100;
+            }
+
+            &.cursor-line-no-selection {
+                background-color: @gutter-background-highlight;
+                color: @gutter-text-highlight;
+            }
+        }
+
+        .line-number:hover {
+            background-color: @gutter-background;
+            color: @gutter-text-highlight;
+        }
+    }
+
+    .fold-marker:after,
+    .gutter .line-number.folded,
+    .gutter .line-number:after {
+        color: #FFF;
+        background: @gutter-text;
+    }
+
+    .invisible {
+        color: @invisible;
+    }
+
+    .cursor {
+        border-color: @cursor-color;
+        border-left: solid @cursor-width;
+    }
+
+    .selection .region {
+        background-color: @selected;
+    }
+
+    .scroll-view {
+        padding-left: 10px;
+    }
+
+    .line.cursor-line {
+        background: @selected-line;
+    }
+}

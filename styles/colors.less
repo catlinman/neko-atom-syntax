@@ -1,0 +1,73 @@
+
+// Basic color definitions.
+@blue: rgb(85, 181, 219);
+@green: rgb(159, 202, 86);
+@yellow: rgb(230, 205, 105);
+@red: rgb(205,63,69);
+@purple: rgb(160,116,196);
+
+// Styling for the Gutter.
+@gutter-text: rgb(70, 70, 70);
+@gutter-text-highlight: #f3aa15;
+@gutter-background: rgb(12, 12, 12);
+@gutter-background-highlight: rgb(6,6,6);
+
+// Main code view.
+@code-background: rgb(15,15,15);
+@code-font: Source Code Pro;
+@code-font-color: rgb(212,215,214);
+
+// Primary syntax coloring.
+@comment: rgb(70,70,70);
+@comment-bg: none;
+@comment-punc: @comment;
+@string: @blue;
+@constant: @red;
+@variable: @green;
+@support: @purple;
+@entity: @blue;
+@keyword: @green;
+@storage: @yellow;
+@meta: @code-font-color;
+@function-param: @blue;
+
+@error: @red;
+
+@regex: @string;
+
+@numeric: @red;
+@quotes: @code-font-color;
+
+@markup: @code-font-color;
+@unknown: @code-font-color;
+
+// Additional colors.
+@invisible: rgba(255,255,255,0.1);
+@guides: rgba(255,255,255,0.04);
+@cursor-color: @code-font-color;
+@cursor-width: 2px;
+@selected: rgba(85,85,85,0.6); // selected background color
+@selected-border: rgba(90,90,90,0.9);
+@selected-line: rgba(0,0,0,0.2);
+
+// HTML tag coloring.
+@tag: @blue;
+@tag-entity: @blue;
+@element-attr: @green;
+@class: @green;
+@id: @green;
+@block: @blue;
+@inline: lighten(@blue, 25%);
+
+@entity-function: @blue;
+@brackets: darken(@code-font-color, 30%);
+@punctuation: darken(@code-font-color, 30%);
+
+@search-bg: transparent;
+@search-border: solid 1px @blue;
+
+@search-active-bg: @blue;
+@search-active-border: solid 1px @blue;
+
+@search-item-border: @blue;
+@search-item-bg: @red;
