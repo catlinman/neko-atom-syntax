@@ -1,33 +1,36 @@
 
 // Basic color definitions.
-@blue: rgb(85, 181, 219);
-@green: rgb(159, 202, 86);
-@yellow: rgb(230, 205, 105);
-@red: rgb(205,63,69);
-@purple: rgb(160,116,196);
+@white: rgb(212,215,214);
+@blue: rgb(60, 190, 255);
+@green: rgb(190, 255, 10);
+@yellow: rgb(255, 190, 60);
+@red: rgb(255, 80, 90);
+@pink: rgb(255, 10, 190);
+@special: rgb(255, 200, 100);
 
 // Styling for the Gutter.
 @gutter-text: rgb(70, 70, 70);
 @gutter-text-highlight: #f3aa15;
-@gutter-background: rgb(12, 12, 12);
-@gutter-background-highlight: rgb(6,6,6);
+@gutter-background: darken(#0c0c0c, 1%);
+@gutter-background-highlight: #0c0c0c;
 
 // Main code view.
-@code-background: rgb(15,15,15);
+@code-background: darken(#0c0c0c, 2%);
 @code-font: Source Code Pro;
-@code-font-color: rgb(212,215,214);
+@code-font-color: @white;
 
 // Primary syntax coloring.
 @comment: rgb(70,70,70);
 @comment-bg: none;
 @comment-punc: @comment;
-@string: @blue;
-@constant: @red;
-@variable: @green;
-@support: @purple;
-@entity: @blue;
+@string: @special;
+@constant: @blue;
+@variable: @yellow;
+@support: @pink;
+@function: @pink;
+@entity: @red;
 @keyword: @green;
-@storage: @yellow;
+@storage: @special;
 @meta: @code-font-color;
 @function-param: @blue;
 
@@ -35,7 +38,7 @@
 
 @regex: @string;
 
-@numeric: @red;
+@numeric: @blue;
 @quotes: @code-font-color;
 
 @markup: @code-font-color;
@@ -44,7 +47,7 @@
 // Additional colors.
 @invisible: rgba(255,255,255,0.1);
 @guides: rgba(255,255,255,0.04);
-@cursor-color: @code-font-color;
+@cursor-color: @special;
 @cursor-width: 2px;
 @selected: rgba(85,85,85,0.6); // selected background color
 @selected-border: rgba(90,90,90,0.9);
@@ -53,7 +56,7 @@
 // HTML tag coloring.
 @tag: @blue;
 @tag-entity: @blue;
-@element-attr: @green;
+@element-attr: @yellow;
 @class: @green;
 @id: @green;
 @block: @blue;

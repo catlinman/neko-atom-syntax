@@ -15,9 +15,12 @@
       }
     }
 
-  .storage,
-  .keyword {
+  .storage {
     color: @storage;
+  }
+
+  .keyword {
+    color: @keyword;
   }
 
   .string{
@@ -28,5 +31,9 @@
         color: darken(@string, 20%);
       }
     }
+  }
+
+  .entity.name.function {
+      color: @entity;
   }
 }
