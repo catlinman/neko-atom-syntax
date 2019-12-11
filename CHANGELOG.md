@@ -1,6 +1,11 @@
 
 # Neko Atom Syntax Changelog #
 
+## 0.4.0 ##
+
+- Mute colors' intensity slightly
+- Swap operator and variable colors
+
 ## 0.2.0 ##
 
 - Redefine color palette.
