@@ -31,11 +31,11 @@
 }
 
 .storage {
-    color: @storage;
+    color: @special;
 
     // var of var a = b;
     &.modifier {
-        color: @storage;
+        color: @special;
     }
 }
 
@@ -195,6 +195,10 @@
             color: @code-font-color;
             font-style: italic;
         }
+
+        &.template {
+            color: @keyword;
+        }
     }
 
     &.section {
@@ -232,59 +236,15 @@
         color: @constant;
     }
 
+    &.storage {
+        color: @support;
+    }
+
     &.type.property-name {
         color: @variable;
     }
 }
 
-// .class names in css & scss
-.meta.tag.inline,
-.meta.tag.inline .entity,
-.source .entity.name.tag {
-    color: @class;
-}
-
-&.tag,
-&.tag .entity {
-    color: @tag-entity;
-}
-
-.html {
-    .string {
-        color: @code-font-color;
-    }
-
-    .punctuation.definition.tag {
-        color: @tag;
-    }
-
-    .entity {
-        &.name.tag {
-            text-decoration: done;
-
-            // structural elements - <html>
-            &.structure {
-                color: @tag;
-            }
-
-            // block level elements - <div>, <h1>
-            &.block {
-                color: @tag;
-            }
-
-            // inline elements - <span>
-            &.script {
-                // color: @tag;
-            }
-        }
-
-        &.other {
-            &.attribute-name {
-                color: @element-attr;
-            }
-        }
-    }
-}
 
 // exports of module.exports, <div id= of <div id="#id">, . of .className
 .entity {
@@ -303,7 +263,8 @@
         color: @support;
     }
 
-    &.name.section {
+    &.name.section,
+    &.name.function {
         color: @entity;
     }
 
@@ -363,20 +324,69 @@
         color: @punctuation;
     }
 
-    &.function {
+    &.function > .entity.name.function {
         color: @function !important;
     }
 
-    &.function-call {
+    &.function-call > .entity.name.function {
         color: @entity !important;
     }
 
-    &.method-call {
+    &.method-call > .entity.name.function {
         color: @keyword !important;
     }
 
     &.arguments {
         color: @variable;
+    }
+}
+
+// .class names in css & scss
+.meta.tag.inline,
+.meta.tag.inline .entity,
+.source .entity.name.tag {
+    color: @class;
+}
+
+&.tag,
+&.tag .entity {
+    color: @tag-entity;
+}
+
+.html {
+    .string {
+        color: @code-font-color;
+    }
+
+    .punctuation.definition.tag {
+        color: @tag;
+    }
+
+    .entity {
+        &.name.tag {
+            text-decoration: done;
+
+            // structural elements - <html>
+            &.structure {
+                color: @tag;
+            }
+
+            // block level elements - <div>, <h1>
+            &.block {
+                color: @tag;
+            }
+
+            // inline elements - <span>
+            &.script {
+                // color: @tag;
+            }
+        }
+
+        &.other {
+            &.attribute-name {
+                color: @element-attr;
+            }
+        }
     }
 }
 
